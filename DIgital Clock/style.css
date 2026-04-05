@@ -1,0 +1,47 @@
+html {
+  margin: 0;
+  height: 100%;
+}
+body {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("faded_gallery.jpg") no-repeat center/cover;
+}
+.container {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  height: 80vh;
+  width: 70vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.date{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 5px;
+
+}
+h1{
+color: white;
+display: flex;
+justify-content: center;
+}
+
+#hr, #min, #sec, #ampm{
+    border: 2px solid black;
+    border-radius: 20px;
+    font-size: 5rem;
+    padding: 1rem;
+    margin: 1px;
+}
+
+.time{
+    margin-bottom: 5px;
+}
