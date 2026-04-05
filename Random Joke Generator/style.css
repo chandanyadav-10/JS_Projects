@@ -1,10 +1,23 @@
-body {
-  background: linear-gradient(to right, #667eea, #764ba2);
+html {
+  margin: 0;
+  height: 100%;
 }
-
+body {
+  background: #eeaeca;
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
 h1 {
- width: fit-content;
-  background: linear-gradient(to right, #667eea, #764ba2);
+  width: fit-content;
+  background: #3f5efb;
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
   margin: auto;
   margin-bottom: 5px;
   padding: 5px;
@@ -16,25 +29,33 @@ h1 {
   justify-content: center;
   font-family: sans-serif;
   width: fit-content;
+  margin-bottom: 20px;
 }
 
 .joke {
-  height: 20vh;
-  background-color: #667eea;
+  height: 50vh;
+  width: 50vw;
+  margin: auto;
+  background-color: (238, 174, 202, 1) 0%;
   box-shadow: black;
   border-radius: 10px;
   padding: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: black;
   font-size: 20px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .btn {
-  padding: 10px;
-  background: linear-gradient(to right, #667eea, #764ba2);
+  padding: 15px;
+  background: #3f5efb;
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
   border-radius: 10px;
   border-style: none;
   display: flex;
@@ -42,13 +63,25 @@ h1 {
   align-items: center;
   margin: auto;
   margin-top: 1rem;
-} 
+}
+
+button:hover {
+  border: 2px solid black;
+}
+
 .emoji {
   display: inline-block;
-  animation: laugh 0.5s infinite, bounce 1s infinite;
+  animation:
+    laugh 0.5s infinite,
+    bounce 1s infinite;
 }
 
 @keyframes bounce {
-  0%,100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
 }
