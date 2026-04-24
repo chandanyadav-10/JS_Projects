@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Account System</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h2>User System</h2>
+
+      <input type="text" id="username" placeholder="Username" />
+      <input type="password" id="password" placeholder="Password" />
+
+      <button onclick="createUser()">Create User</button>
+      <button onclick="loginUser()">Login</button>
+      <button onclick="updatePassword()">Update Password</button>
+      <button onclick="showUsers()">Total Users</button>
+      <button onclick="showPassword()">Show Passwords</button>
+
+      <div class="output" id="output"></div>
+
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
