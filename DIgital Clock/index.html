@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DIgital Clock</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>DIGITAL CLOCK</h1>
+    <div id="dateContainer" class="container">
+      <div class="time_date">
+        <!-- time and date -->
+        <div class="time">
+          <span id="hr" class="date">5</span>
+          <span id="min" class="date">12</span>
+          <span id="sec" class="date">35</span>
+          <span id="ampm" class="date">PM</span>
+        </div>
+        <br />
+        <span id="date" class="date"></span>
+        <!-- alarm clock -->
+        <div>
+          <input type="time" id="alarmTime" />
+          <audio id="alarmSound" src="3dabrar-funny-alarm-317531.mp3"></audio>
+          <br>
+          <Button id="setAlarm" onclick="setAlarm()">Set Alarm</Button>
+          <Button id="stopAlarm" onclick="stopAlarm()">Stop Alarm</Button>
+          <div class="status" id="status">No alarm set</div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
