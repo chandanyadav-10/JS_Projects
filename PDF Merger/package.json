@@ -1,0 +1,20 @@
+{
+  "name": "pdf-merger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@severi/pdf-merger-js": "^3.1.2",
+    "express": "^5.2.1",
+    "multer": "^2.1.1",
+    "pdf-merge": "^1.2.0",
+    "pdf-merger-js": "^5.1.2"
+  }
+}
